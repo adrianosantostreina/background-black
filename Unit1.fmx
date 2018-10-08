@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Button2: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Exibir'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Exibir sem Click'
+    OnClick = Button3Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 32.000000000000000000
+    Position.Y = 152.000000000000000000
+    TextPrompt = 'Exemplo de texto'
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 32.000000000000000000
+    Position.Y = 208.000000000000000000
+    TextPrompt = 'Exemplo de texto'
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 32.000000000000000000
+    Position.Y = 256.000000000000000000
+    TextPrompt = 'Exemplo de texto'
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 32.000000000000000000
+    Position.Y = 304.000000000000000000
+    TextPrompt = 'Exemplo de texto'
+  end
+  object Layout1: TLayout
+    Position.X = 176.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      ClipChildren = True
+      Fill.Color = claWhite
+      Size.Width = 257.000000000000000000
+      Size.Height = 129.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 20.000000000000000000
+      YRadius = 20.000000000000000000
+      object Label1: TLabel
+        Align = Top
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 81.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.VertAlign = Leading
+        Text = 
+          'Ol'#225', '#13#10#13#10'O senhor precisa clicar no bot'#227'o abaixo para confirmar ' +
+          'essa informa'#231#227'o.'#13#10
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Align = Bottom
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 92.000000000000000000
+        Size.Width = 241.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Confirmar'
+        OnClick = Button1Click
+      end
+    end
+  end
+end
